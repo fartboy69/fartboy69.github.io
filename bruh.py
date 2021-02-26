@@ -5,11 +5,11 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-@app.route('/my-link/')
-def my_link():
-    print ('I got clicked!')
-
-    return 'Click.'
-
-if __name__ == '__main__':
-    app.run(debug=True)
+<html>
+    <head>
+        <title>Home Page - Microblog</title>
+    </head>
+    <body>
+        <h1>Hello, ''' + user['username'] + '''!</h1>
+    </body>
+</html>'''
