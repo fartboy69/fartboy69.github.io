@@ -1,8 +1,9 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route('/')
-@app.route('/index')
+@app.route("/")
 def index():
-    user = {'username': 'Miguel'}
-    return render_template('index.html', title='Home', user=user)
+    return "Hello! This is written in my py file. <h1>t</h1>"
+
+if __name__ == "__main__":
+    app.run()
